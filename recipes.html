@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Success Stories</title>
+    <style>
+        /* Additional CSS for the specific page */
+        .content {
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        .success-section {
+            display: flex;
+            justify-content: space-between; /* Align items at both ends */
+            align-items: center; /* Vertically center-align items */
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .success-text {
+            flex: 1; /* Occupy one-third of the available space on the left */
+            text-align: left;
+        }
+
+        .success-image {
+            flex: 1; /* Occupy two-thirds of the available space on the right */
+            text-align: right;
+        }
+
+        /* Default styles for larger screens */
+        .content-left {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content-right {
+            flex: 2;
+            padding: 20px;
+            text-align: right;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stack elements vertically on smaller screens */
+            }
+
+            .content-left,
+            .content-right {
+                flex: none; /* Reset flex values for full width on smaller screens */
+                width: 100%; /* Make elements take full width */
+                text-align: left; /* Adjust text alignment as needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Success Stories</h1>
+        <nav>
+            <ul>
+                <li><a href="Fitness_challenges.html" class="circle-button">Home</a></li>
+                <li><a href="brain_teasers.html" class="circle-button">Brain Teasers</a></li>
+                <li><a href="recipes.html" class="circle-button">Healthy Recipes</a></li>
+                <li><a href="success_stories.html" class="circle-button">Success Stories</a></li>
+                <li><a href="contact.html" class="circle-button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="success-section">
+            <div class="success-text">
+                <h2>Pasta with salmon</h2>
+                <p>Salmon with Pasta is a very fast to make recipe, fat free, delicious and super healthy</p>
+                <ul>
+                    <li>1. Cook the pasta according to the directions on the package, putting the salmon in the water six minutes before the cooking time is up.</li>
+                    <li>2. Preheat the oil in a pan and toast the pine nuts. Fry the pepper until it becomes soft. Add a ladleful of the pasta water and stir until the mushrooms begin to soften.</li>
+                    <li>3. After the pasta is cooked, drain the pasta and place the salmon on a plate. Using a fork, flake the salmon and combine it with the veggies, pasta, and basil leaves. Before serving, add a little pepper and toss everything together.</li>
+                </ul>
+            </div>
+            <div class="success-image">
+                <img src="PASTA WITH SALMON.jpg" alt="PASTA WITH SALMON Image">
+            </div>
+        </div>
+
+        <div class="success-section">
+            <div class="success-text">
+                <h2>stir-fried Chicken</h2>
+                <p>"Stir-fried Chicken, is a very nutrious meal that will only take you 10-15 minutes to make!"</p>
+                <ul>
+                    <li>1. Prepare the rice as directed on the package, then drain. In a nonstick wok set over high heat, fry the red onions and ginger for two minutes. Cook for one minute after adding the carrots, broccoli stem, and chilli, if using.</li>
+                    <li>2. Add the broccoli florets and 3 tablespoons water after briefly stir-frying the chicken and cumin. Once the chicken is cooked through and the broccoli florets are just tender, cover and steam for 3/4 minutes.</li>
+                    <li>3. In the interim, combine the vinegar, tamari, and peanut butter. Serve the chicken and vegetables with the sauce mixed in, atop cooked rice.</li>
+                </ul>
+            </div>
+            <div class="stir Stir-fried-image">
+                <img src="stir-fried chicken.jpg" alt="stir fried Image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Smashing Websites Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>

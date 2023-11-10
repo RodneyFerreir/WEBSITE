@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Success Stories</title>
+    <style>
+        /* Additional CSS for the specific page */
+        .content {
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        .success-section {
+            display: flex;
+            justify-content: space-between; /* Align items at both ends */
+            align-items: center; /* Vertically center-align items */
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .success-text {
+            flex: 1; /* Occupy one-third of the available space on the left */
+            text-align: left;
+        }
+
+        .success-image {
+            flex: 1; /* Occupy two-thirds of the available space on the right */
+            text-align: right;
+        }
+
+        /* Default styles for larger screens */
+        .content-left {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content-right {
+            flex: 2;
+            padding: 20px;
+            text-align: right;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stack elements vertically on smaller screens */
+            }
+
+            .content-left,
+            .content-right {
+                flex: none; /* Reset flex values for full width on smaller screens */
+                width: 100%; /* Make elements take full width */
+                text-align: left; /* Adjust text alignment as needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Success Stories</h1>
+        <nav>
+            <ul>
+                <li><a href="Fitness_challenges.html" class="circle-button">Home</a></li>
+                <li><a href="brain_teasers.html" class="circle-button">Brain Teasers</a></li>
+                <li><a href="recipes.html" class="circle-button">Healthy Recipes</a></li>
+                <li><a href="success_stories.html" class="circle-button">Success Stories</a></li>
+                <li><a href="contact.html" class="circle-button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="success-section">
+            <div class="success-text">
+                <h2>Test your mind</h2>
+                <p>Try your mental dexterity with brainteasers and exercises designed to increase cognitive function. This is Ideal for improving memory and elevating attention while you progress through your fitness goal</p>
+            </div>
+            <div class="success-image">
+                <img src="test your mind.jpg" alt="test Image">
+            </div>
+        </div>
+
+        <div class="success-section">
+            <div class="success-text">
+                <h2>Elevate Your Mind</h2>
+                <p>"Enjoy inclusive to our programme a section to elevate your mind, which will put your mind and wit to the test. Perfect for people who want to enhance their athletic prowess with a mental edge"</p>
+            </div>
+            <div class="success-image">
+                <img src="Elevate your mind.jpg" alt="elevate Image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Smashing Websites Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>

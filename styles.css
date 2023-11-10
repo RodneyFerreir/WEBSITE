@@ -1,0 +1,102 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the circled white buttons */
+.circle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    border-radius: 50%; /* Make it a circle */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Default styles for larger screens */
+.content-left {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.content-right {
+    flex: 2;
+    padding: 20px;
+    text-align: right;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack nav items vertically on smaller screens */
+        margin-right: 0; /* Remove margin between nav items */
+    }
+
+    .content, .feedback-form {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+
+    .content-left, .content-right, .circle-button {
+        width: 100%; /* Make elements take full width */
+        text-align: left; /* Adjust text alignment as needed */
+        padding: 20px 0; /* Adjust padding for smaller screens */
+        margin-right: 0; /* Reset margin */
+    }
+
+    /* Ensure images within content do not overflow their container */
+    .content img, .feedback-form img, .circle-button img {
+        max-width: 100%; /* Ensure images don't exceed the width of their container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
