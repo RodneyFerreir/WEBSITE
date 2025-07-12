@@ -3,39 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Fitness Challenges - Home</title>
+    <title>Porlah - Curated Insights Across Life's Galaxy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Fitness Challenges</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="circle-button">Home</a></li>
-                <li><a href="brain_teasers.html" class="circle-button">Brain Teasers</a></li>
-                <li><a href="recipes.html" class="circle-button">Healthy Recipes</a></li>
-                <li><a href="success_stories.html" class="circle-button">Success Stories</a></li>
-                <li><a href="contact.html" class="circle-button">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="content">
-        <div class="content-left">
-        
-            <img src="Gym1.jpg" alt="Fitness Challenge Image">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Porlah</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="content-right">
-            <h2 style="text-align: center;">Explore Our Fitness Challenges</h2>
-            
-            <p>Whether you're a beginner or a fitness enthusiast, our challenges are designed to help you achieve your fitness goals.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Curated Insights Across Life's Galaxy</h2>
+                    <p class="hero-subtitle">Discover intelligently curated content spanning health, finance, technology, home improvement, and beyond. Your guide to better living, one insight at a time.</p>
+                    <a href="#featured" class="cta-button">Explore Articles</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="cosmic-orb"></div>
+                    <div class="floating-elements">
+                        <div class="element health"></div>
+                        <div class="element finance"></div>
+                        <div class="element tech"></div>
+                        <div class="element home"></div>
+                        <div class="element pets"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <h2 style="text-align: center;">Contact Us</h2>
-        <!-- Your contact form here -->
-        <!-- Feedback form here -->
+    <!-- Featured Posts -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <h3 class="section-title">Featured Insights</h3>
+            <div class="posts-grid">
+                <article class="post-card featured-large">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=450&fit=crop" alt="Health & Wellness">
+                        <div class="post-category health">Health & Wellness</div>
+                    </div>
+                    <div class="post-content">
+                        <h4 class="post-title">The Science-Backed Morning Routine That Changes Everything</h4>
+                        <p class="post-excerpt">Discover the research-proven habits that top performers use to start their day with clarity, energy, and purpose.</p>
+                        <div class="post-meta">
+                            <span class="read-time">8 min read</span>
+                            <span class="post-date">Dec 15, 2024</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop" alt="Finance">
+                        <div class="post-category finance">Finance & Wealth</div>
+                    </div>
+                    <div class="post-content">
+                        <h4 class="post-title">5 Investment Apps That Actually Work in 2024</h4>
+                        <p class="post-excerpt">Cut through the noise with our tested recommendations for building wealth.</p>
+                        <div class="post-meta">
+                            <span class="read-time">5 min read</span>
+                            <span class="post-date">Dec 12, 2024</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop" alt="Tech">
+                        <div class="post-category tech">Tech & Tools</div>
+                    </div>
+                    <div class="post-content">
+                        <h4 class="post-title">AI Tools That Save 10+ Hours Per Week</h4>
+                        <p class="post-excerpt">Practical automation tools that actually deliver on their promises.</p>
+                        <div class="post-meta">
+                            <span class="read-time">7 min read</span>
+                            <span class="post-date">Dec 10, 2024</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop" alt="Home">
+                        <div class="post-category home">Home & DIY</div>
+                    </div>
+                    <div class="post-content">
+                        <h4 class="post-title">Smart Home Setup Under $500</h4>
+                        <p class="post-excerpt">Transform your living space with these carefully selected smart devices.</p>
+                        <div class="post-meta">
+                            <span class="read-time">6 min read</span>
+                            <span class="post-date">Dec 8, 2024</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=250&fit=crop" alt="Pets">
+                        <div class="post-category pets">Pets & Living</div>
+                    </div>
+                    <div class="post-content">
+                        <h4 class="post-title">The Ultimate Pet Care Tech Stack</h4>
+                        <p class="post-excerpt">Modern solutions for pet parents who want the best for their companions.</p>
+                        <div class="post-meta">
+                            <span class="read-time">4 min read</span>
+                            <span class="post-date">Dec 6, 2024</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h3 class="section-title">Explore Categories</h3>
+            <div class="categories-grid">
+                <a href="category.html?cat=health" class="category-card">
+                    <div class="category-icon health-icon"></div>
+                    <h4>Health & Wellness</h4>
+                    <p>Science-backed insights for optimal living</p>
+                </a>
+                <a href="category.html?cat=finance" class="category-card">
+                    <div class="category-icon finance-icon"></div>
+                    <h4>Finance & Wealth</h4>
+                    <p>Smart strategies for financial freedom</p>
+                </a>
+                <a href="category.html?cat=tech" class="category-card">
+                    <div class="category-icon tech-icon"></div>
+                    <h4>Tech & Tools</h4>
+                    <p>Cutting-edge tools that actually work</p>
+                </a>
+                <a href="category.html?cat=home" class="category-card">
+                    <div class="category-icon home-icon"></div>
+                    <h4>Home & DIY</h4>
+                    <p>Transform your space with smart solutions</p>
+                </a>
+                <a href="category.html?cat=pets" class="category-card">
+                    <div class="category-icon pets-icon"></div>
+                    <h4>Pets & Living</h4>
+                    <p>Everything for your furry companions</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <h3 class="section-title">About Porlah</h3>
+                <p class="about-text">We curate the galaxy's most valuable insights across multiple life domains. Our mission is to cut through the noise and deliver only the content that truly matters to your growth and success.</p>
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="trust-icon">🤖</div>
+                        <span>AI-Enhanced Curation</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">👥</div>
+                        <span>Human-Verified Quality</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🔍</div>
+                        <span>Transparent Reviews</span>
+                    </div>
+                </div>
+                <a href="about.html" class="learn-more-btn">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>Porlah</h4>
+                    <p>Curated insights across life's galaxy</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h5>Categories</h5>
+                        <a href="category.html?cat=health">Health & Wellness</a>
+                        <a href="category.html?cat=finance">Finance & Wealth</a>
+                        <a href="category.html?cat=tech">Tech & Tools</a>
+                        <a href="category.html?cat=home">Home & DIY</a>
+                        <a href="category.html?cat=pets">Pets & Living</a>
+                    </div>
+                    <div class="footer-section">
+                        <h5>Legal</h5>
+                        <a href="legal.html#affiliate">Affiliate Disclaimer</a>
+                        <a href="legal.html#privacy">Privacy Policy</a>
+                        <a href="legal.html#terms">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h5>Stay Updated</h5>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address" class="newsletter-input">
+                        <button class="newsletter-btn">Subscribe</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Porlah. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
